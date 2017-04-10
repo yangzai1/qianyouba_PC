@@ -1,0 +1,168 @@
+body{
+    margin: auto;
+    background-color: #E9EBEB;
+}
+* {
+    font-family: "Microsoft YaHei";
+}
+.package{
+    width: 100%;
+    margin: auto;
+}
+
+
+/*login*/
+.login{
+    width: 400px;
+    height:342px;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    -webkit-box-shadow:0 0 15px #B0B0B0;
+    -moz-box-shadow:0 0 15px #B0B0B0;
+    box-shadow:0 0 15px #B0B0B0;
+
+}
+.login_part{
+    margin: 20px auto;
+}
+.login_part1{
+    /*display: inline-block;*/
+    font-size: 24px;
+    text-align: center;
+    padding-top: 30px;
+   /* margin: 20px auto;*/
+}
+.login_part2{
+    font-size: 18px;
+    text-align: center;
+    color: #00CC00;
+    margin: 10px auto 30px;
+}
+.login_form{
+    width: 345px;
+    margin: auto;
+    padding-bottom: 1px;
+}
+.login_authCode{
+    margin: 5px auto;
+    padding: auto;
+}
+.login_authCode input {
+    display: inline-block;
+    vertical-align: middle;
+    outline: none;
+    border: 1px solid #C0C0C0;
+    width: 200px;
+    height: 41px;
+    text-align: center;
+   /* float: left;*/
+    margin: 0px 30px 0px 0px;
+}
+.login_authCode span{
+    display: inline-block;
+    width: 100px;
+    height: 35px;
+    vertical-align: middle;
+    font-size: 1.3em;
+}
+.input{
+    width: 343px;
+    height: 45px;
+    margin: 20px auto 5px;
+    border: 1px solid #C0C0C0;
+}
+.input img{
+    width:30px;
+    height: 30px;
+    margin: 10px;
+    vertical-align: middle;
+}
+.input input{
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 0.9em;
+    color: #535353;
+    width: 240px;
+}
+.prompt{
+    display: none;
+    width: 343px;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+}
+.prompt img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.prompt span{
+    font-size: 0.8em;
+    color:#FF9900;
+}
+
+.submit{
+	position:relative;
+}
+.submit input{
+	outline:none;
+    display: table;
+    border:1px solid transparent;
+    background-color: #00CC00;
+    font-family: "Microsoft YaHei";
+    color: #FFFFFF;
+    margin: 15px auto 40px;
+    font-size: 1em;
+    width: 100px;
+    height: 38px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius:2px;
+    cursor:pointer;
+}
+.submit a{
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #868686;
+}
+.submit a:hover{
+	color:#00cc00
+}
+
+
+@media only screen and (max-width:600px) {
+    .register {
+        width: 80%;
+        /* background-color: blue; */
+    }
+    .register_part {
+        width: 80%;
+    }
+    .register_part1 {
+        font-size: 25px;
+    }
+    .register_part2 {
+        font-size: 23px;
+    }
+    .register_form {
+        width: 60%;
+        margin-bottom:40px;
+    }
+    .input input {
+        width: 90%;
+    }
+    .register_form input{
+        height:40px;
+    }
+    .register_authCode {
+        margin-left:53px;
+    }
+    .submit input{
+        font-size:20px;
+    }
+}

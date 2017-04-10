@@ -1,0 +1,202 @@
+
+<!-- saved from url=(0040)http://www.qianyouba.com/user_loginUI.do -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<meta charset="UTF-8">-->
+    
+    <title>登录</title>
+    <link href="./登录1_files/login.css" type="text/css" rel="stylesheet">
+    <script src="./登录1_files/hm.js"></script><script type="text/javascript" src="./登录1_files/jquery-2.1.4.min.js"></script>
+    <meta name="renderer" content="webkit">
+</head>
+<body>
+
+
+
+<link href="./登录1_files/navDropD.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./登录1_files/dropDwithColl.js"></script>
+<script type="text/javascript" src="./登录1_files/jquery-2.1.4.min.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9fc0781097f62372e543fa4b6d5aa43e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<div class="logo">
+    <a href="http://www.qianyouba.com/user_index.do"> <img src="./登录1_files/logo.png">
+    </a>
+</div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="http://www.qianyouba.com/user_index.do">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="http://www.qianyouba.com/user_personDetailsListUI.do">旅游达人</a></li>
+                    <li><a href="http://www.qianyouba.com/club_homePage.do">驴友社区</a></li>
+                    <li><a href="http://www.qianyouba.com/user_hangzhouHomePageUI.do" style="padding-top:6px;">魅力北海<img style="vertical-align:bottom; margin-left:4px;" src="./登录1_files/navimg.gif"></a></li>
+                </ul>
+                
+                
+                
+                
+	             <!--未登陆  -->
+	             
+	                <ul class="nav navbar-nav navbar-right">
+	
+	                        <form action="http://www.qianyouba.com/user_dizhiSearch.do" method="post" name="form2" id="nav-search" class="navbar-form navbar-left" role="search">
+	                            <div class="form-group">
+	                                <!-- <input type="text" class="form-control" placeholder="旅行目的地.."> -->
+	                                <input type="text" class="form-control" name="dizhiSearch" id="dizhiSearch" value="" placeholder="旅行目的地.." required="" autocomplete="off">
+	                                <button type="submit" class="btn-submit">sub</button>
+	                            </div>
+	                        </form>
+	                    <li>
+	                        <span><a class="span-a" href="http://www.qianyouba.com/clubLogin.html">俱乐部登陆</a></span>
+	                    </li>
+	                    <li>
+	                        <span><a class="span-a" href="http://www.qianyouba.com/user_loginUI.do">登陆</a></span>
+	                    </li>
+	                    <li class="zhuce-li">
+	                        <span><a class="span-a" href="http://www.qianyouba.com/user_registerUI.do?users_type=0">注册</a></span>
+	                    </li>
+	                    <li>
+	                    	<span class="btn-daren">
+	                    		<a href="http://www.qianyouba.com/user_registerUI.do?users_type=1">申请成为达人</a>
+	                    	</span>
+	                        <!-- <button href="user_registerUI.do?users_type=1" type="button" class="btn-daren">申请成为达人</button> -->
+	                    </li>
+	                </ul>
+				
+				
+				<!--已登陆状态  -->
+				
+                
+                
+                
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav> 
+   <!-- login-->
+
+    <div class="login">
+        <div class="login_part">
+            <div class="login_part1">
+                用户登录
+            </div>
+            <div class="login_part2">
+                加入牵游吧，开启旅游新风尚
+            </div>
+        </div>
+        <form class="login_form" action="http://www.qianyouba.com/user_login.do" id="test" onsubmit="return enableSubmit();" method="post">
+        	<input type="hidden" name="returnTag" value="0">
+        	<input type="hidden" name="returnString" value="">
+        	<input type="hidden" name="returnDarenId" value="0">
+        
+        	<input id="inputError" type="hidden" value="">
+
+            <div class="input" id="name">
+                <img src="./登录1_files/phone.png">
+                <input type="text" name="users_phonenum" autocomplete="off" placeholder="请输入账号或手机号" value="" id="login_name">
+            </div>
+            <div class="input" id="login_qq">
+                <img src="./登录1_files/password.png">
+                <input type="password" name="users_password" autocomplete="off" placeholder="请输入密码" value="" id="login_password">
+            </div>
+            <div class="prompt" id="prompt" style="display: none;">
+                <img src="./登录1_files/prompt.png">
+                <span id="span1"></span>
+            </div>
+            <div class="submit">
+                <input type="submit" name="submit" value="登录" id="submit1">
+                <a href="http://www.qianyouba.com/user_retrievePasswordUI.do">忘记密码</a>
+            </div>
+        </form>
+    </div>
+
+<script src="./登录1_files/js.KinerCode.js"></script>
+<script>
+    var inp = document.getElementById('inputCode');
+    var code = document.getElementById('code');
+    var res;
+    var c = new KinerCode({
+        len: 4,//需要产生的验证码长度
+//        chars: ["1+2","3+15","6*8","8/4","22-15"],//问题模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        chars: [
+            1, 2, 3, 4, 5, 6, 7, 8, 9, 0,
+            'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+        ],//经典模式:指定产生验证码的词典，若不给或数组长度为0则试用默认字典
+        question: false,//若给定词典为算数题，则此项必须选择true,程序将自动计算出结果进行校验【若选择此项，则可不配置len属性】,若选择经典模式，必须选择false
+        copy: false,//是否允许复制产生的验证码
+        bgColor: "#66CC99",//背景颜色[与背景图任选其一设置]
+        bgImg: "",//若选择背景图片，则背景颜色失效
+        randomBg: false,//若选true则采用随机背景颜色，此时设置的bgImg和bgColor将失效
+        inputArea: inp,//输入验证码的input对象绑定【 HTMLInputElement 】
+        codeArea: code,//验证码放置的区域【HTMLDivElement 】
+        click2refresh: true,//是否点击验证码刷新验证码
+        false2refresh: false,//在填错验证码后是否刷新验证码
+        validateEven: "keyup",//触发验证的方法名，如click，blur等
+        validateFn: function (result) {//验证回调函数
+            res = result;
+            if (result) {
+                $("#prompt span").text("");
+                $("#prompt").css("display","none");
+                enableSubmit(true);
+            } else {
+                    $("#prompt").css("display","inline-block");
+                    $("#prompt span").text("验证码错误，请重新输入");
+            }
+        }
+    });
+
+</script>
+<script type="text/javascript">
+var num = /^[0-9]*$/;
+var psw = /(?=.*?[a-zA-Z])(?=.*?[0-9])[a-zA-Z0-9]{6,}$/
+function enableSubmit() {
+	var num = /^[0-9]*$/;
+	var psw = /(?=.*?[a-zA-Z])(?=.*?[0-9])[a-zA-Z0-9]{6,}$/;
+	var phone = $("#login_name").val();
+    var password = $("#login_password").val();
+    if (phone.length == 0 || password.length == 0) {
+        $("#prompt").css("display","inline-block");
+        $("#prompt span").text("账号密码不能为空");
+        return false;
+    } else {
+        $("#prompt").css("display","none");
+        $("#prompt span").text("");
+    }
+}
+
+$(function($){
+    var inputError = $("#inputError").val();
+    if(inputError == ""){
+                $("#prompt span").text("");
+                $("#prompt").css("display","none");
+    }else{
+              $("#prompt").css("display","inline-block");
+              $("#prompt span").text(inputError);
+    
+    }   
+});
+
+</script>
+<div id="cntvlive2-is-installed"></div></body></html>

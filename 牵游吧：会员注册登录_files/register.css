@@ -1,0 +1,434 @@
+* {
+    font-family: "Microsoft YaHei";
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* start editing from here */
+a {
+    text-decoration: none;
+}
+
+.txt-rt {
+    text-align: right;
+}
+
+/* text align right */
+.txt-lt {
+    text-align: left;
+}
+
+/* text align left */
+.txt-center {
+    text-align: center;
+}
+
+/* text align center */
+.float-rt {
+    float: right;
+}
+
+/* float right */
+.float-lt {
+    float: left;
+}
+
+/* float left */
+.clear {
+    clear: both;
+}
+
+/* clear float */
+.pos-relative {
+    position: relative;
+}
+
+/* Position Relative */
+.pos-absolute {
+    position: absolute;
+}
+
+/* Position Absolute */
+.vertical-base {
+    vertical-align: baseline;
+}
+
+/* vertical align baseline */
+.vertical-top {
+    vertical-align: top;
+}
+
+/* vertical align top */
+nav.vertical ul li {
+    display: block;
+}
+
+/* vertical menu */
+nav.horizontal ul li {
+    display: inline-block;
+}
+
+/* horizontal menu */
+img {
+    max-width: 100%;
+}
+
+/*end reset*/
+/****-----start-body----****/
+body {
+    background: url("../../image/user/register.jpg") no-repeat 0px 0px;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+body a, form li, .submit input[type="submit"], form li.second, ul.age-groups li label, .submit.three input[type="submit"], .submit.two input[type="submit"] {
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+}
+
+/*----sap-----*/
+.sap_tabs {
+    clear: both;
+    padding-bottom: 3%;
+    margin: 5% auto;
+    width: 30%;
+    text-align: center;
+    /*background:#000000;*/
+    background: rgba(000, 000, 000, 0.7) none repeat scroll 0 0 !important;
+}
+
+.facts {
+    padding: 3% 4% 5% 4%;
+    /*background: #eb5242;*/
+}
+
+.resp-tabs-list {
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    padding: 4% 0px;
+
+}
+
+.resp-tabs-list li {
+    /*width: 25%;*/
+
+}
+/*.resp-tab-item1{
+    border-bottom: 2px solid #D7D7D7;
+    font-weight:normal;
+    text-shadow:none;
+    color:#D7D7D7;
+}*/
+.resp-tab-item2{
+    border-bottom: 3px solid #00CC00;
+    font-weight:bold;
+    text-shadow: none;
+    color:#FFFFFF;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1em 0 0.5em 0;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    width: 25%;
+    outline: none;
+    letter-spacing:2px;
+}
+.resp-tab-item {
+    letter-spacing:2px;
+    border-bottom: 2px solid #D7D7D7;
+    color: #D7D7D7;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 1em 0 0.5em 0;
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+   /* width: 30%;*/
+    outline: none;
+
+}
+
+.resp-tab-item:hover {
+    text-shadow: none;
+}
+
+.error {
+    margin: -10px auto 0px;
+    background-color: #EB5242;
+    color:#FFFFFF;
+    font-size: 0.9em;
+   /* margin-top: -10px;*/
+    text-align: center;
+    width: 150px;
+    padding: 0px 5px 0px;
+    /*height: 10px;*/
+}
+
+
+
+
+.register_form {
+    display: table;
+    width: 300px;
+    margin: 0px auto;
+}
+
+.register_form input {
+    display: table;
+    /*width: 280px;*/
+    height: 40px;
+    margin: 15px auto 3px;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    /*color: #C9C9C9;*/
+    border:0;
+    outline:none;
+    /*border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;*/
+
+}
+
+.input input {
+    width: 290px;
+
+}
+
+.register_authCode {
+    /*display: table;*/
+    margin: 15px 10px 3px;
+    float: left;
+    width: 290px;
+}
+
+.register_authCode input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 167px;
+    float: left;
+    margin: 0px 20px 0px 0px;
+
+}
+
+.mycode {
+    display: inline-block;
+
+    /*float: right;*/
+    width: 100px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+/*.error {
+    display: table;
+    height: 15px;
+
+}*/
+/*
+.error span {
+    display: table;
+    margin: 10px auto 0px;
+    color: #00CC00;
+    font-size: 14px;
+    text-align: center;
+    width: 260px;
+    height: 22px;
+}*/
+
+.submit input {
+	display:inline-block;
+	background-color: #00CC00;
+    font-family: "Microsoft YaHei";
+    color: #FFFFFF;
+    margin: 30px auto 0px;
+    border: none;
+    width: 260px;
+    height: 32px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius:5px;
+}
+
+/*-----start-responsive-design------*/
+@media (min-width: 2100px) {
+    .sap_tabs {
+        float: right;
+        margin-right: 300px;
+        width: 23%;
+    }
+}
+@media (min-width: 1800px) {
+    .sap_tabs {
+        float: right;
+        margin-right: 200px;
+        width: 23%;
+    }
+}
+@media (max-width: 1650px) {
+    .sap_tabs {
+        float: right;
+        margin-right: 300px;
+        width: 25%;
+    }
+}
+@media (max-width: 1600px) {
+    .sap_tabs {
+        float: right;
+        margin-right: 300px;
+        width: 27%;
+    }
+}
+@media (max-width: 1440px) {
+    .sap_tabs {
+        margin-right: 200px;
+        width: 27%;
+    }
+}
+
+
+@media (max-width: 1366px) {
+    .sap_tabs {
+        clear: both;
+        margin-left: 800px;
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 1280px) {
+    .sap_tabs {
+        clear: both;
+        margin-left: 55%;
+    }
+    .resp-tabs-list li{
+        width: 30%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    body {
+        background: url("registerImg/register.jpg") no-repeat 0px 0px;
+        padding-bottom: 4em;
+    }
+
+    .sap_tabs {
+        clear: both;
+
+        width: 40%;
+    }
+
+    .main h1 {
+        font-size: 2.5em;
+        padding: 1em 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .sap_tabs {
+        clear: both;
+        margin: 7% auto;
+        width: 50%;
+    }
+
+    .twr a.hvr-bounce-to-top {
+        background: #11aade;
+        padding: 1em 5.9em;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .sap_tabs {
+        clear: both;
+        float:none;
+        width: 340px;
+        margin-top: 15%;
+    }
+    .register_form input{
+        width: 270px;
+    }
+    .register_authCode{
+       width: 270px;
+       margin: 15px 20px 3px;
+    }
+    .register_authCode input{
+        width:127px;
+    }
+    .resp-tab-item {
+        font-size: 1.1em;
+    }
+
+
+@media (max-width: 480px) {
+        body {
+            background: url("registerImg/register.jpg") no-repeat 0px 0px;
+            padding-bottom: 4em;
+        }
+
+        .resp-tab-item {
+            font-size: 1.1em;
+        }
+    }
+    @media (max-width: 320px) {
+        .wrap {
+            margin: 0 auto;
+            width: 92%;
+        }
+        .input input{
+            width: 200px;
+        }
+        .resp-tab-item {
+            font-size: 1em;
+        }
+        .register_authCode input{
+            margin: 0px -10px 0px 30px;
+            width: 95px;
+        }
+
+    }
+}

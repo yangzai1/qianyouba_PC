@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://www.qianyouba.com/user_personDetailUI.do?users_id=8 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+	<meta name="renderer" content="webkit">
+    <title>牵游吧-芮笑琴-浙江省西塘</title>
+    <link rel="stylesheet" type="text/css" href="./牵游吧-芮笑琴-浙江省西塘_files/reset.css">
+    <link rel="stylesheet" type="text/css" href="./牵游吧-芮笑琴-浙江省西塘_files/personDetailCSS.css">
+    <link rel="stylesheet" type="text/css" href="./牵游吧-芮笑琴-浙江省西塘_files/bootstrap-modalInformation.css">
+    <link rel="stylesheet" type="text/css" href="./牵游吧-芮笑琴-浙江省西塘_files/bootstrap-modalservice.css">
+    <script src="./牵游吧-芮笑琴-浙江省西塘_files/hm.js"></script><script type="text/javascript" src="./牵游吧-芮笑琴-浙江省西塘_files/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="./牵游吧-芮笑琴-浙江省西塘_files/bootstrap-modal.js"></script>
+    <script type="text/javascript" src="./牵游吧-芮笑琴-浙江省西塘_files/personDetailJS.js"></script>
+</head>
+<body class="">
+
+
+
+<link href="./牵游吧-芮笑琴-浙江省西塘_files/navDropD.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./牵游吧-芮笑琴-浙江省西塘_files/dropDwithColl.js"></script>
+<script type="text/javascript" src="./牵游吧-芮笑琴-浙江省西塘_files/jquery-2.1.4.min.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9fc0781097f62372e543fa4b6d5aa43e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<div class="logo">
+    <a href="http://www.qianyouba.com/user_index.do"> <img src="./牵游吧-芮笑琴-浙江省西塘_files/logo.png">
+    </a>
+</div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="http://www.qianyouba.com/user_index.do">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="http://www.qianyouba.com/user_personDetailsListUI.do">旅游达人</a></li>
+                    <li><a href="http://www.qianyouba.com/club_homePage.do">驴友社区</a></li>
+                    <li><a href="http://www.qianyouba.com/user_hangzhouHomePageUI.do" style="padding-top:6px;">魅力北海<img style="vertical-align:bottom; margin-left:4px;" src="./牵游吧-芮笑琴-浙江省西塘_files/navimg.gif"></a></li>
+                </ul>
+                
+                
+                
+                
+	             <!--未登陆  -->
+	             
+	                <ul class="nav navbar-nav navbar-right">
+	
+	                        <form action="http://www.qianyouba.com/user_dizhiSearch.do" method="post" name="form2" id="nav-search" class="navbar-form navbar-left" role="search">
+	                            <div class="form-group">
+	                                <!-- <input type="text" class="form-control" placeholder="旅行目的地.."> -->
+	                                <input type="text" class="form-control" name="dizhiSearch" id="dizhiSearch" value="" placeholder="旅行目的地.." required="" autocomplete="off">
+	                                <button type="submit" class="btn-submit">sub</button>
+	                            </div>
+	                        </form>
+	                    <li>
+	                        <span><a class="span-a" href="http://www.qianyouba.com/clubLogin.html">俱乐部登陆</a></span>
+	                    </li>
+	                    <li>
+	                        <span><a class="span-a" href="http://www.qianyouba.com/user_loginUI.do">登陆</a></span>
+	                    </li>
+	                    <li class="zhuce-li">
+	                        <span><a class="span-a" href="http://www.qianyouba.com/user_registerUI.do?users_type=0">注册</a></span>
+	                    </li>
+	                    <li>
+	                    	<span class="btn-daren">
+	                    		<a href="http://www.qianyouba.com/user_registerUI.do?users_type=1">申请成为达人</a>
+	                    	</span>
+	                        <!-- <button href="user_registerUI.do?users_type=1" type="button" class="btn-daren">申请成为达人</button> -->
+	                    </li>
+	                </ul>
+				
+				
+				<!--已登陆状态  -->
+				
+                
+                
+                
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+
+    <div class="position_mark"></div>
+    <div class="absolute_part" style="position: fixed; top: -410px; z-index: 1;">
+    <!--头图-->
+        <div class="page_headimg">
+			<img src="./牵游吧-芮笑琴-浙江省西塘_files/d5b02c24-48cd-4486-8bc9-8c180a64e9332芮笑琴-头图1440-390.jpg" alt="芮笑琴-西塘">
+        </div>
+    <!--详细信息-->
+        <div class="detailline">
+            <div class="persondetail">
+                <div class="people_img">
+                    <div>
+                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/13ac5d76-77a1-4540-8a2f-651a9872a13a头像（芮笑琴）.jpg" alt="芮笑琴">
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="bigtitle">
+                      
+                        	
+                        <span class="big_span">【欢迎大家来嘉兴市】</span>
+                        	 
+                        	
+                        <span class="city_span">
+                        
+							浙江省-嘉兴市-西塘
+							
+						 
+						</span>
+                    </div>
+                    <div class="smalldetail">
+                        <span>芮笑琴</span>
+                        <span class="connectme">和我联系</span>
+                        
+                        <a href="http://www.qianyouba.com/user_loginUI.do?returnTag=1&amp;returnString=personDetailUI?&amp;returnDarenId=8">登录查看联系方式</a>
+                        
+                         
+                        <span class="btn_detail" data-toggle="modal" data-target="#information">达人详情</span>
+                    </div>
+                </div>
+                <div class="chooseitem">
+                    <a href="http://www.qianyouba.com/shopping_dinggouServiceUI.do?daren_id=8" target="_blank"> <div class="icon-shop"></div><div>选购服务</div></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 达人详情弹出框-->
+    <div class="modal faden" id="information" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                    <h4 class="modal-title" id="jiesongfuwu">个人详情</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-name"><h3>姓名</h3><h4>芮笑琴</h4></div>
+                    <div class="modal-body-birth"><h3>年龄</h3><h4>27岁</h4></div>
+                    <div class="modal-body-work"><h3>工作年限</h3><h4>5</h4></div>
+                    <div class="modal-body-foot"><h3>足迹</h3><h4>去过厦门，扬州，常州，连云港，苏州，上海，杭州等地。</h4></div>
+                    <div class="modal-body-introduce"><h3>个人介绍</h3><h4>大家好，我是小芮，地道的西塘人，欢迎大家来西塘玩，关于西塘的吃喝玩乐都可以问我，我一定会知无不言言无不尽的都告诉你们，热情开朗的我喜欢交朋友，来自远方的你，在这里会找到家的感觉哦！</h4></div>
+                    <div class="modal-body-photo"><h3>生活照</h3>
+
+                        
+							<img src="./牵游吧-芮笑琴-浙江省西塘_files/13ac5d76-77a1-4540-8a2f-651a9872a13a头像（芮笑琴）.jpg">
+						
+						
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--标题-->
+    <div class="title_content" style="padding-top: 672px;">
+        <div class="title_center">
+            <div class="title_left">
+                <div class="article_title">
+                    <span>
+                   	   <!--我的 
+                    	
+                    		
+                    			西塘
+                        	 
+                    		 
+                        ，秘籍大分享-->
+                        	秘籍大分享，免费当地指导
+					</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--文章部分-->
+    <div class="article_content">
+        <div class="left_part">
+            <div class="img_part">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/851323f1-3737-4ce7-aa39-933f126674228.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/c949e27a-81ab-4250-bac3-c055061b325612.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/9d108275-b67c-4577-b54f-e0d24a2cb2874.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/e42a926c-f228-4838-9a2c-eb25aefffd466.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/bee2c5b8-0fdd-470a-94e5-cf72e1276a949.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/a3b8128b-d187-4004-9590-e6f2896909d41.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/cf048f09-9569-473c-a055-18108df241603.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/609ffc6b-b840-4b11-a852-633c718812ff梅花苑客栈.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/e2bb92c6-5815-4138-96a2-6d0aed7ed4b815.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/8986b448-2d01-40e7-b8e1-017ffa8af66113.jpg" alt="">
+	            
+	                <img src="./牵游吧-芮笑琴-浙江省西塘_files/3275ddc4-ecfe-44ae-9042-952e933afb6d7.jpg" alt="">
+	            
+            </div>
+            <div class="article_part">
+                <p>
+                	</p><p class="MsoNormal" align="center" style="text-align:center;text-indent:24.0pt; mso-char-indent-count:2.0;line-height:150%"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 24px; line-height: 2;">忆江南·水墨西塘</span></p><p><br></p><p style="text-align: center;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">不想离开，并不是逃离现实</span></p><p style="text-align: center;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">不想离开，并不是不愿面对</span></p><p style="text-align: center;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">而是，我的心已经在西塘扎根</span></p><p style="text-align: center;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;---题记</span></p><p><br></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;大家好，我是小芮，地道的西塘人，欢迎大家来西塘玩，关于西塘的吃喝玩乐都可以问我，我一定会知无不言言无不尽的都告诉你们，热情开朗的我喜欢交朋友，来自远方的你，在这里会找到家的感觉哦！</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;第一次去应该怎么玩耍的最接地气的攻略，喜欢西塘的小伙伴，按照我们的路线准能找到属于自己的艳遇，趁青春，出发吧！</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"><br></span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"></span></p><hr><p><br></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;西塘着实不大，不用费心去记路线，主要的景点都在河的两边，你顺着河边走自然能都转到。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;两天的时间最适合西塘这种江南的小镇，早晨、傍晚、夜，是西塘一天里最美的时候。在西塘住一晚，清晨走古板路，黄昏摇船，夜晚看灯笼在晚上去廊桥看看，幽幽的小河边、高挂的红灯笼，定会给你一种难忘的感受。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;品一杯淡淡的茶香，和着淅淅沥沥的烟雨，携一颗闲适而淡泊的心随着我一起一览西塘之美景。 &nbsp; </span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"><br></span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"></span></p><hr><br><p><br></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"> &nbsp;&nbsp;&nbsp;&nbsp;烟雨长廊提到西塘的美景，首先不得不提的就是最为著名的景点——烟雨长廊。烟雨长廊之所以闻名一方面是因为它是造型古朴的廊棚，是西塘“桥多、弄多、廊棚多”的一种体现。宁静中散发着沧桑，质朴中演绎着生活。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"><br></span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">西塘古桥</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;望仙桥 望仙桥，这座从宋代走来的古桥，与西塘古镇的众多桥相比，单看，也许看不出什么特色，但是一旦你将望仙桥融入到整个古镇之中，桥与两岸的绿树，桥与静静的河流，桥与浓浓的江南水乡是那么浑然天成，相映生辉。古老的望仙桥，见证着西塘的历史，是西塘古镇里最不可或缺的。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"><br></span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">永宁桥</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;作为西塘最重要的交通要道，连接着西塘的标志性建筑烟雨长廊，同时也连着曾经最繁华的长廊北栅街，和以前最繁忙的水道烧香港，以及现在最有名的购物街西街。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;准确来说，永宁桥一桥牵起整个西塘的前世今生，连接着西塘如今的美好，同时勾连起西塘几百年的苍伤与变迁，见证着古镇水乡近千年来的兴衰沉浮。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"><br></span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">西园&nbsp;</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2; text-indent: 24pt;">&nbsp;&nbsp;&nbsp;&nbsp;据说西园是明代朱氏私邸，为江南大户人家建筑，院内花草树木、亭台楼阁、假山鱼池，不计其数，其优美的风景和独特的设计，在当时称得上是镇上数一数二的。“西园”这一名字的由来据说是为纪念诗人柳亚子来西园而命名的。园中景色幽美，花格游廊、楼台水榭、曲桥流水、假山凉亭都别具风味。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2; text-indent: 24pt;"><br></span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">石皮弄 &nbsp;</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;西塘有“三多”其中“一多”就是“弄多”。西塘的石弄分为三类： 街弄、陪弄和水弄。西塘石弄多是出了名的，也是西塘的一大特色。西塘石弄既深又长，曲径而通幽，可谓“石弄深深深几许”。行知尽头，又豁然开朗，可谓“柳暗花明新洞天”。 &nbsp; &nbsp;</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"> &nbsp;&nbsp;&nbsp;&nbsp;在西塘众多石弄，最有名的就是石皮弄。石弄是非常具有历史代表，并具有民俗特征的历史遗迹。其设计蕴含着民间百姓的智慧，其建造再现着民间百姓的生活。触摸着石弄，你能感受它深沉的呼吸；依靠着石弄，你能听到它深远的述说；脚踏着石弄，你能触及到它深厚的灵魂。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"><br></span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"></span></p><hr>&nbsp; &nbsp; &nbsp;<p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;吃喝玩乐在西塘</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;六月红：</span><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2; text-indent: 24pt;">特指农历六月所产的河蟹，这些刚刚经过第三次脱壳的雄性“童子蟹”，体重一般在2两左右，具有外壳脆、内壳软、腥味重、肉质丰满的特点。六月红主要吃公蟹，以壳薄肉嫩黄多著称，每到阴历6月，也就是公历7、8月才上市。有“穷足穷，不忘六月红”一语。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;包元（材料为豆腐皮+小野菜+肉，薄薄的豆腐皮把小野菜包起来一起蒸的，清淡好吃）、酱爆田螺、还有用“塘里婆”（河里的一种小黑鱼）做的豆腐鱼汤、鳝糊或鳝丝（酱烧的味道重些会比较好吃）。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;八珍糕，由本地优质糯米配八味中药制成，因为卫生的缘故，正宗意义上的八蒸糕已经不生产。千层饼、水豆腐花等，既下酒又可作点心。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;荷叶粉蒸肉，古镇传统名菜，风味独特，滑软爽口，香而不腻，老马的粉蒸肉是西塘最正宗的。但价钱也是最贵的,5元一块，阿牛粉蒸肉,4元一块还可以。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;冬笋鲜肉烧卖，西塘最正宗的烧卖是用冬笋+鲜肉+皮冻做成的,网友点评：那叫一个香,鲜。PS:吃烧卖必得配上西塘最正宗的米醋了。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;"><br></span></p><p style="text-align: left;"><br></p><hr><p><br></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">西塘夜景 &nbsp; &nbsp;</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;在西塘，一定不能错过的就是西塘的夜景。在吃过晚饭后，夜幕降临之时，沿着烟雨长廊，漫步在西塘夜色之中，一边是静静的西塘夜色，一边是热闹的夜生活。灯火阑珊下，你会看到千年西塘的历史足迹你还会听到来自历史的声音——苍劲有力的越剧唱调……</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">&nbsp;&nbsp;&nbsp;&nbsp;西塘最美丽的时候就在于一早一晚，唯有住在西塘景区内才能欣赏到这美丽的景色。在这里我向大家推荐我自家的客栈，梅花苑客栈庭院幽深，可深切体会古镇望族的古韵生活。十分安静，价格也是非常便宜的。睡着百年雕花床，闻着空气中氤氲着的水乡气息，渐渐沉睡，令人陶醉。</span></p><p style="text-align: left;"><span style="font-family: &#39;Microsoft YaHei&#39;; font-size: 18px; line-height: 2;">西塘的美，我找不到可以形容的词句它没有丽江那么风情万种亦没有乌镇和周庄那么商业化但它，很朴素，很简单。最后欢迎大家的到来！</span></p><p><br></p><p class="MsoNormal" align="left" style="text-indent: 24pt; line-height: 150%;"><a href="http://www.mafengwo.cn/travel-scenic-spot/mafengwo/10010.html" target="http://www.mafengwo.cn/i/_blank"></a><span lang="EN-US"><a href="http://www.mafengwo.cn/travel-scenic-spot/mafengwo/10186.html" target="http://www.mafengwo.cn/i/_blank"><span lang="EN-US"></span></a></span><span lang="EN-US"><a href="http://www.mafengwo.cn/travel-scenic-spot/mafengwo/10434.html" target="http://www.mafengwo.cn/i/_blank"><span lang="EN-US"></span></a></span><span lang="EN-US"><a href="http://www.mafengwo.cn/travel-scenic-spot/mafengwo/11729.html" target="http://www.mafengwo.cn/i/_blank"><span lang="EN-US"></span></a></span><span lang="EN-US"></span></p>
+                <p></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--浮动菜单-->
+        <div class="menu_part" style="position: fixed; top: 160px; left: 1111px;">
+            <span>芮笑琴</span>的服务
+            <div class="item_hoder">
+                <div class="down_line"></div>
+                <!-- 遮住尾巴-->
+                <div class="overtail"></div>
+                <!--一个一个的-->
+                
+	                <div class="item_right" data-toggle="modal" data-target="#35">
+	                    <div class="horizontal_line"></div>
+	                    <div class="item_word">住宿预订</div>
+	                    <div class="item_detail_btn">详情</div>
+	                    <div class="clear"></div>
+	                </div>
+                
+	                <div class="item_right" data-toggle="modal" data-target="#348">
+	                    <div class="horizontal_line"></div>
+	                    <div class="item_word">免费当地指导</div>
+	                    <div class="item_detail_btn">详情</div>
+	                    <div class="clear"></div>
+	                </div>
+                
+	                <div class="item_right" data-toggle="modal" data-target="#352">
+	                    <div class="horizontal_line"></div>
+	                    <div class="item_word">门票预订</div>
+	                    <div class="item_detail_btn">详情</div>
+	                    <div class="clear"></div>
+	                </div>
+                
+	                <div class="item_right" data-toggle="modal" data-target="#353">
+	                    <div class="horizontal_line"></div>
+	                    <div class="item_word">儿童门票预定</div>
+	                    <div class="item_detail_btn">详情</div>
+	                    <div class="clear"></div>
+	                </div>
+                
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+        <!--服务模态框-->
+        <div class="modal faden" id="35" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title1" id="jiesong">住宿预订</h4>
+                        <h1></h1>
+                    </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/f27b5bf4-0c86-4426-8d27-b711a9f2672d幸福雕花1号.jpg">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>温馨大标间</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        150.00元/间
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>可选房型：幸福雕花、浪漫雕花、和谐现代、粉色公主</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6> 平日价格150元，周五220元，周六320元，节日528元</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/29ecb44a-525e-4881-92fd-362f68c848a4圆床2.jpg">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>温馨主题房</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        180.00元/间
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>可选房型：甜蜜圆床、清新小木屋、绿韵大标间、精品踏踏米</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6>平日价格180元，周五280元，周六420元，节日668元</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/5725d9fb-22e1-47b5-b607-bf99e59e6e94复试家庭房3.jpg">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>复式房型</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        220.00元/间
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>可选房型：精品商务标间，复试1.8大床，复试家庭标间，水中望月意境房，亭台楼阁情侣房。</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6>平日价格220元，周五380元，周六520元，节日888元</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/79387dba-896a-461d-80d2-3df6d063b420复试家庭套房4.png">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>复试圆床家庭套房（带客厅带电脑带天窗）</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        280.00元/间
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>带客厅带电脑带天窗</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6> 平日价格280元，周五420元，周六560元，节日988元</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/1098e4e9-ea72-44d5-92de-5fa70798387b阳台3.png">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>豪华贵宾楼</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        480.00元/间
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>临河带阳台带电脑带木桶浴缸</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6> 平日价格480元，周五680元，周六880元，节日1188元</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!--服务模态框-->
+        <div class="modal faden" id="348" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title1" id="jiesong">免费当地指导</h4>
+                        <h1></h1>
+                    </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/6fbe6d42-9057-4d55-9c4c-515bd270d514QQ截图20130624122344.jpg">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>免费当地指导</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        0.00
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>免费为各位到西塘游玩的朋友提供实时指导</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6>  可免费提供：西塘车站接站服务，叫车服务，叫醒服务，帮忙管看小孩服务。
+需至少选购一项其他类型服务</h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!--服务模态框-->
+        <div class="modal faden" id="352" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title1" id="jiesong">门票预订</h4>
+                        <h1></h1>
+                    </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/a1c3768d-3d48-4ac6-8f33-92ed0dde84dd08ab40a4f8d944eb806a7eadda743c8c_C_640_320.jpg">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>西塘门票</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        55.00元/人
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>原价100元/人   牵游吧游客价55元/人</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6></h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/1db5bf00-6aa3-4f03-95d0-6f009845c71581596_720.JPG">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>嘉善国际木雕城</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        30.00元/人
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6></h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6></h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/90ebf4a3-e944-465b-9d4e-4f07f28f13142013090615115808.jpg">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>嘉善云澜温泉湾</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        199.00元/人
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6></h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6></h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!--服务模态框-->
+        <div class="modal faden" id="353" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                        <h4 class="modal-title1" id="jiesong">儿童门票预定</h4>
+                        <h1></h1>
+                    </div>
+                    
+                        <div class="modal-body">
+                            <div class="modal-body-font1">
+                                    
+                                        <img src="./牵游吧-芮笑琴-浙江省西塘_files/5779cd6d-bb21-496e-b676-5a3722fcfac32013090615115808.jpg">
+                                    
+
+                                    <div class="service-con">
+                                        <h5>名称：</h5>
+                                        <h6>嘉善云澜湾温泉儿童票</h6>
+                                    </div>
+                                <div class="service-con">
+                                    <h5>价格：</h5>
+                                    <h6>
+                                        80.00元/人
+                                    </h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>详情：</h5>
+                                    <h6>1.1米一下免票   1.1米到1.3米儿童票   1.3米以上成人票</h6>
+                                </div>
+                                <div class="service-con">
+                                    <h5>备注：</h5>
+                                    <h6></h6>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    <div class="shu">
+    <div class="discuss">
+        <div class="graded">
+            <div class="graded-lv">
+                <span class="lv-nu">1.0</span><span class="lv-font">好评率</span>
+            </div>
+            <hr>
+            <div class="graded-fen">
+                <span class="fen-nu">5.0分</span><span class="fen-font">服务项目得分</span>
+            </div>
+        </div>
+        <div class="classify">
+            <div class="classify-ra">
+                
+        
+        <span class="classify-font">全部</span><span class="classify-nu">0</span>
+        <span class="classify-font">好评</span><span class="classify-nu">0</span>
+        <span class="classify-font">中评</span><span class="classify-nu">0</span>
+        <span class="classify-font">差评</span><span class="classify-nu">0</span>
+        
+            </div>
+        </div>
+				
+			
+
+		</div>
+</div>
+	
+    
+<script type="text/javascript" src="./牵游吧-芮笑琴-浙江省西塘_files/jquery-2.1.4.min.js"></script>    
+<link href="./牵游吧-芮笑琴-浙江省西塘_files/bottom-css.css" rel="stylesheet" type="text/css">
+<div class="code">
+    <div class="code-width">
+       <!--  <div class="code-btn">
+            <a href="user_registerUI.do" class="code-btn-a">
+                <input type="button" value="申请成为达人">
+            </a>
+        </div> -->
+        <div class="code-page">
+            <div class="code-page1">
+                <div class="code-page1-tn">
+                    <div class="code-page1-t">通过牵游吧旅游网，您可以</div>
+                    <div class="code-page1-n">
+                        <p>1.自主定价，自由选择服务时间，能者多得</p>
+                        <p>2.特色攻略指导，个人特色展示，获得丰厚报酬</p>
+                        <p>3.线上担保交易，游客先行支付，行程保障无忧</p>
+                    </div>
+                </div>
+            </div>
+            <div class="code-page2">
+                <div class="code-page2-con">
+                    <span>联系电话 18603738857  </span>
+                    <span style="margin: auto 15px">客服QQ 81456426</span>
+                    <span>网站邮箱 qianyouba@126.com</span>
+                </div>
+                <hr>
+                <div class="code-page2-t">敬请期待我们牵游吧移动客户端</div>
+                <div class="code-page2-n">
+                    <img src="./牵游吧-芮笑琴-浙江省西塘_files/Android.png"><img style="margin-left: 40px" src="./牵游吧-芮笑琴-浙江省西塘_files/ios.png">
+
+                    <p> 版权所有:牵游吧-自助旅游平台 中华人民共和国工信部网站备案号:粤ICP备15045531号-1</p>
+
+                    <p>Copyright © www.qianyouba.com 115 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="code-page3">
+                <div class="code-page3-c">
+                    <img src="./牵游吧-芮笑琴-浙江省西塘_files/code.jpg">
+
+                    <p>关注我们的官方微信获得更多旅游资讯</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="cntvlive2-is-installed"></div></body></html>

@@ -1,0 +1,165 @@
+
+.code {
+    font-family: "Microsoft YaHei";
+    display:table;
+    background-color: #797979;
+    width: 100%;
+    /* height: 260px;*/
+    text-align: center;
+    padding: 40px 0px;
+    margin: 0px auto;
+}
+
+.code-width {
+    width: 85%;
+    margin: 0px auto;
+}
+.code-btn a{
+    text-decoration: none;
+ }
+.code-btn a input{
+    background-color: #00CD66;
+    /*color: #FFFFFF;*/
+    font-size: 0.9em;
+    width: 125px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.code-page{
+    margin: 40px auto;
+}
+.code-page1{
+    float: left;
+    width: 24%;
+   /* margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border: 1.5px dotted #FFFFFF;
+    box-shadow: 0px 40px 20px -40px #000000;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;*/
+}
+.code-page1-tn{
+    width: 285px;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border: 1.5px dotted #FFFFFF;
+    box-shadow: 0px 40px 20px -40px #4B4B4B;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.code-page1-t{
+    font-size: 1em;
+    font-weight: bold;
+}
+.code-page1-n{
+    text-align: left;
+    font-size: 0.8em;
+}
+.code-page1-n p{
+    margin: 1.2em 0px 10px 10px;
+    
+}
+
+.code-page2{
+    float: left;
+    width: 55%;
+    text-align: center;
+}
+.code-page2 hr{
+    margin: 20px auto;
+    height:1px;
+    width: 95%;
+    border:none;
+    border-top:1px solid #323232;
+}
+.code-page2-con{
+    font-weight: bold;
+    font-size: 1em;
+    color: #FFFFFF;
+}
+.code-page2-con span{
+	color: #FFFFFF;
+}
+.code-page2-t{
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+.code-page2-n img{
+    width: 45px;
+    height: 45px;
+}
+.code-page2-n{
+    font-size: 0.7em;
+}
+.code-page2-n p{
+	margin:1em auto;
+}
+.code-page3{
+    float: left;
+    width: 19%;
+
+}
+.code-page3-c img{
+    box-shadow: 0px 25px 20px -25px #000000;
+    width: 8em;
+    height: 8em;
+}
+.code-page3-c{
+    width: 8em;
+    margin: 10px auto;
+}
+.code-page3-c p{
+    font-size: 0.8em;
+    margin: 1em auto;
+    line-height:20px;
+}
+@media only screen and (max-width: 1350px){
+	.code-width{
+		width: 95%;
+	}
+}
+@media only screen and (max-width: 1250px){
+	.code-page1{
+		width: 26%;
+	}
+	.code-page2{
+		width: 56%;
+	}
+	.code-page3{
+		width: 17%;
+	}
+}
+@media only screen and (max-width: 800px){
+	.code-page{
+		margin: 0px auto;
+	}
+	.code-page1{
+		float: none;
+		margin: 20px auto;
+		width: 90%;
+	}
+	.code-page1-tn{
+		margin: 0px auto;
+	}
+	.code-page2{
+		float: none;
+		margin: 0px auto;
+		width: 90%;
+	}
+	.code-page3{
+		width: 90%;
+		float: none;
+		margin: 20px auto;
+	}
+}
+

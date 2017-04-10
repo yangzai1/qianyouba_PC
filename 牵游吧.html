@@ -1,0 +1,633 @@
+
+<!-- saved from url=(0044)http://www.qianyouba.com/user_dizhiSearch.do -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>牵游吧</title>
+    <link type="text/css" rel="stylesheet" href="./牵游吧_files/reset.css">
+    <link type="text/css" rel="stylesheet" href="./牵游吧_files/personList.css">
+    <script src="./牵游吧_files/hm.js"></script><script type="text/javascript" src="./牵游吧_files/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		var countryNum = $("#countryNum").val();
+		if (countryNum == 1) {
+			$("#inside").css({	background : "#66CCFF",color : "#ffffff"});
+			$("#all").css({	background : "#FFFFFF",	color : "#5E5E5E"});
+			$("#outside").css({	background : "#FFFFFF",	color : "#5E5E5E"});
+		} else if (countryNum == 2) {
+			$("#outside").css({	background : "#66CCFF",color : "#ffffff"});
+			$("#inside").css({	background : "#FFFFFF",	color : "#5E5E5E"});
+			$("#all").css({	background : "#FFFFFF",	color : "#5E5E5E"});
+		} else {
+			$("#all").css({	background : "#66CCFF",color : "#ffffff"});
+			$("#inside").css({	background : "#FFFFFF",	color : "#5E5E5E"});
+			$("#outside").css({	background : "#FFFFFF",	color : "#5E5E5E"});
+		}
+		
+		$(".input-wrapper img").click(function(){
+			$("#form2").submit();
+		})
+		
+		$("#nav-search").remove();
+	});
+</script></head>
+
+<body>
+
+
+
+<link href="./牵游吧_files/navDropD.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./牵游吧_files/dropDwithColl.js"></script>
+<script type="text/javascript" src="./牵游吧_files/jquery-2.1.4.min.js"></script>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?9fc0781097f62372e543fa4b6d5aa43e";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<div class="logo">
+    <a href="http://www.qianyouba.com/user_index.do"> <img src="./牵游吧_files/logo.png">
+    </a>
+</div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="">
+                        <a href="http://www.qianyouba.com/user_index.do">首页 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a href="http://www.qianyouba.com/user_personDetailsListUI.do">旅游达人</a></li>
+                    <li><a href="http://www.qianyouba.com/club_homePage.do">驴友社区</a></li>
+                    <li><a href="http://www.qianyouba.com/user_hangzhouHomePageUI.do" style="padding-top:6px;">魅力北海<img style="vertical-align:bottom; margin-left:4px;" src="./牵游吧_files/navimg.gif"></a></li>
+                </ul>
+                
+                
+                
+                
+	             <!--未登陆  -->
+	             
+	                <ul class="nav navbar-nav navbar-right">
+	
+	                        
+	                    <li>
+	                        <span><a class="span-a" href="http://www.qianyouba.com/clubLogin.html">俱乐部登陆</a></span>
+	                    </li>
+	                    <li>
+	                        <span><a class="span-a" href="http://www.qianyouba.com/user_loginUI.do">登陆</a></span>
+	                    </li>
+	                    <li class="zhuce-li">
+	                        <span><a class="span-a" href="http://www.qianyouba.com/user_registerUI.do?users_type=0">注册</a></span>
+	                    </li>
+	                    <li>
+	                    	<span class="btn-daren">
+	                    		<a href="http://www.qianyouba.com/user_registerUI.do?users_type=1">申请成为达人</a>
+	                    	</span>
+	                        <!-- <button href="user_registerUI.do?users_type=1" type="button" class="btn-daren">申请成为达人</button> -->
+	                    </li>
+	                </ul>
+				
+				
+				<!--已登陆状态  -->
+				
+                
+                
+                
+                
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+<form action="http://www.qianyouba.com/user_dizhiSearch.do" method="post" name="form2" id="form2">
+<div class="headImg">
+    <img src="./牵游吧_files/personList.jpg">
+</div>
+
+<div class="searchcontent">
+    <div class="input-wrapper cf">
+        <input type="text" name="dizhiSearch" id="dizhiSearch" value="" placeholder="搜索您想去的旅行目的地..." required="" autocomplete="off">
+        <button type="submit"></button> 
+        <img src="./牵游吧_files/search_3232.png">
+    </div>
+</div>
+
+<div class="listSelect">
+	<a href="http://www.qianyouba.com/user_personDetailsListUI.do?">  <input type="button" value="全部" id="all" style="color: rgb(255, 255, 255); background: rgb(102, 204, 255);">  </a>
+	<a href="http://www.qianyouba.com/user_personDetailsListUI.do?countryNum=1">  <input type="button" value="境内" id="inside" style="color: rgb(94, 94, 94); background: rgb(255, 255, 255);">  </a>
+	<a href="http://www.qianyouba.com/user_personDetailsListUI.do?countryNum=2">  <input type="button" value="境外" id="outside" style="color: rgb(94, 94, 94); background: rgb(255, 255, 255);">  </a>
+	
+	<input type="hidden" name="countryNum" id="countryNum" value="0">
+	
+	<!-- <input type="submit" value="搜索"> -->
+</div>
+   
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=12" target="_blank">
+            <div class="biaoti"></div>
+            
+            <img src="./牵游吧_files/2ce683f0-39c7-42d9-933e-01141296bdf8蜈洲支岛-8.jpg" alt="">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		海南省--三亚市 
+            		
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/9c957362-9c6b-4d67-a7da-f42fcde090d3谢甲会-头像-6.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">10</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=13" target="_blank">
+            <div class="biaoti">情迷北海</div>
+            
+            <img src="./牵游吧_files/c0f35d06-fc9d-4773-9d34-601502512ab3银滩-012.jpg" alt="">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		广西壮族自治区--北海市 
+            		
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/96c315c3-f5df-4a64-8ce2-d505d3b2971e马胜云-（头像）1.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">5</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=19" target="_blank">
+            <div class="biaoti"></div>
+            
+            <img src="./牵游吧_files/f56f795c-86e6-42c9-bfcb-0e52e7f8f056七里扬帆.jpg" alt="建德市">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		浙江省 
+            		--建德市
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/42b7b88c-a955-4988-915a-8600846745e4256-256.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">5</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=20" target="_blank">
+            <div class="biaoti">假日好去处，休闲北戴河</div>
+            
+            <img src="./牵游吧_files/37ab7689-4e18-4e5f-9dc0-42f78cb22d85北戴河-30.jpg" alt="北戴河">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		河北省 
+            		--北戴河
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/d03d79ef-f4fa-43d3-98b8-d46cba29ffb0-1.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">4</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=21" target="_blank">
+            <div class="biaoti"></div>
+            
+            <img src="./牵游吧_files/bce73731-5278-4214-8631-f9ced5e0ad61本人.jpg" alt="">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		广西壮族自治区--北海市 
+            		
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/f6219626-4b6f-4581-883c-4ecbfe2d4174chenyushu.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">8</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=22" target="_blank">
+            <div class="biaoti"></div>
+            
+            <img src="./牵游吧_files/25717d92-63c8-4d7a-b1e2-bcd500264d94厦门-01.jpg" alt="">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		福建省--厦门市 
+            		
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/5bbcdc9e-a0ff-4bd1-9a21-0ad92ae319e6jiatongqiang.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">7</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=23" target="_blank">
+            <div class="biaoti">清丽云水谣，南靖又一朝</div>
+            
+            <img src="./牵游吧_files/47fa9dfa-d62f-4256-8f02-4c46cbf96605漳州云水谣2.jpg" alt="">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		福建省--漳州市 
+            		
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/4ac39160-d965-43b2-8426-ea68db25a49c头像-256-256-.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">4</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=24" target="_blank">
+            <div class="biaoti">丝路兰州</div>
+            
+            <img src="./牵游吧_files/40eeaac4-7cbc-4b45-8298-b81459cce7a3百年中山铁桥-3.jpg" alt="">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		甘肃省--兰州市 
+            		
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/97fcecd3-fbdf-48ab-8307-d8df0149df7e马腾-头像-256-256.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">6</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+    <div class="HotRecommended_list">
+        <div class="Recommended_list">
+            <a href="http://www.qianyouba.com/user_personDetailUI.do?users_id=25" target="_blank">
+            <div class="biaoti">深圳，一座年轻的大都市</div>
+            
+            <img src="./牵游吧_files/100ba9f1-c67e-4bfa-a78d-fdaee96db2c4深圳夜景1.jpg" alt="">
+            
+            
+            
+            
+            	<div class="Recommended_address">
+            		广东省--深圳市 
+            		
+            	</div>
+            
+            
+            
+            
+            <div class="Recommended_content">
+            
+            	
+                <img src="./牵游吧_files/edfde8d8-b3c2-4e99-a65b-6b20ebb50099头像-256-256-.jpg" alt="">
+                
+                
+                
+                <div class="Recommended_content_font">
+                    <span>提供</span>
+						
+							<div class="Recommended_content_Bnum" id="sex">5</div>
+						
+						
+						<span>项服务供您选择</span>
+                </div>
+            </div>
+            </a>
+        </div>
+       </div>
+    
+ </form>       
+
+
+<script type="text/javascript" src="./牵游吧_files/jquery-2.1.4.min.js"></script>
+<style>
+        *{ margin:0; padding:0; list-style:none;}
+        a{ text-decoration:none;}
+        a:hover{ text-decoration:none;}
+        .page{width:100%; display:table;}
+        .tcdPageCode{padding: 15px 20px;color: #ccc;text-align:center; width:100%}
+        .tcdPageCode span{display: inline-block;color: #000000;display: inline-block;height: 25px;	line-height: 25px;	padding: 0 10px;border: 1px solid #ddd;	margin: 0 2px;border-radius: 4px;vertical-align: middle;}
+        .tcdPageCode span:hover{text-decoration: none;border: 1px solid #66CCFF;}
+        .current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #66CCFF;border: 1px solid #66CCFF; border-radius: 4px;vertical-align: middle;}
+</style>
+<div id="PageSelectorBar" class="page">
+	
+	<div id="PageSelectorSelectorArea" class="tcdPageCode">
+		<a href="javascript: gotoPage(1);" title="首页" style="cursor: hand;"> 
+		<span>首页</span> 
+		</a>
+
+		
+			
+			
+				
+				<span class="PageSelectorNum" style="cursor: hand;" onclick="gotoPage(&#39;1&#39;);">1</span>
+			
+
+		
+			
+				
+				<span class="current">2</span>
+			
+			
+
+		
+			
+			
+				
+				<span class="PageSelectorNum" style="cursor: hand;" onclick="gotoPage(&#39;3&#39;);">3</span>
+			
+
+		
+			
+			
+				
+				<span class="PageSelectorNum" style="cursor: hand;" onclick="gotoPage(&#39;4&#39;);">4</span>
+			
+
+		
+			
+			
+				
+				<span class="PageSelectorNum" style="cursor: hand;" onclick="gotoPage(&#39;5&#39;);">5</span>
+			
+
+		
+			
+			
+				
+				<span class="PageSelectorNum" style="cursor: hand;" onclick="gotoPage(&#39;6&#39;);">6</span>
+			
+
+		
+			
+			
+				
+				<span class="PageSelectorNum" style="cursor: hand;" onclick="gotoPage(&#39;7&#39;);">7</span>
+			
+
+		
+
+		<a href="javascript: gotoPage(&#39;7&#39;);" title="尾页" style="cursor: hand;"> 
+		<span>尾页</span>
+			 </a> 转到： <select onchange="gotoPage(this.value);" id="_pn">
+			
+				<option value="1">1</option>
+			
+				<option value="2">2</option>
+			
+				<option value="3">3</option>
+			
+				<option value="4">4</option>
+			
+				<option value="5">5</option>
+			
+				<option value="6">6</option>
+			
+				<option value="7">7</option>
+			
+		</select>
+	</div>
+</div>
+
+<script type="text/javascript">
+$("#_pn").val("2");
+	function gotoPage( pageNum ){
+		$("#form2").append("<input type='hidden' name='pageNum' value='" + pageNum +"'>");
+		$("#form2").submit();
+	};
+</script>
+
+
+    
+<script type="text/javascript" src="./牵游吧_files/jquery-2.1.4.min.js"></script>    
+<link href="./牵游吧_files/bottom-css.css" rel="stylesheet" type="text/css">
+<div class="code">
+    <div class="code-width">
+       <!--  <div class="code-btn">
+            <a href="user_registerUI.do" class="code-btn-a">
+                <input type="button" value="申请成为达人">
+            </a>
+        </div> -->
+        <div class="code-page">
+            <div class="code-page1">
+                <div class="code-page1-tn">
+                    <div class="code-page1-t">通过牵游吧旅游网，您可以</div>
+                    <div class="code-page1-n">
+                        <p>1.自主定价，自由选择服务时间，能者多得</p>
+                        <p>2.特色攻略指导，个人特色展示，获得丰厚报酬</p>
+                        <p>3.线上担保交易，游客先行支付，行程保障无忧</p>
+                    </div>
+                </div>
+            </div>
+            <div class="code-page2">
+                <div class="code-page2-con">
+                    <span>联系电话 18603738857  </span>
+                    <span style="margin: auto 15px">客服QQ 81456426</span>
+                    <span>网站邮箱 qianyouba@126.com</span>
+                </div>
+                <hr>
+                <div class="code-page2-t">敬请期待我们牵游吧移动客户端</div>
+                <div class="code-page2-n">
+                    <img src="./牵游吧_files/Android.png"><img style="margin-left: 40px" src="./牵游吧_files/ios.png">
+
+                    <p> 版权所有:牵游吧-自助旅游平台 中华人民共和国工信部网站备案号:粤ICP备15045531号-1</p>
+
+                    <p>Copyright © www.qianyouba.com 115 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="code-page3">
+                <div class="code-page3-c">
+                    <img src="./牵游吧_files/code.jpg">
+
+                    <p>关注我们的官方微信获得更多旅游资讯</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="cntvlive2-is-installed"></div></body></html>
